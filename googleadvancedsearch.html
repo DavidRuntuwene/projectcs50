@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="advanced.css">
+       <!--nav{
+    float: right;
+    font-family: arial;
+    font-size: 13px;
+  }
+  .navtext{
+    color: #444;
+    text-decoration: none;
+    top: -12px;
+    position: relative;
+    margin: 5px;
+  }
+  .navtext:hover{
+    text-decoration: underline;
+  }
+h1{
+   color: #C92907;
+   font-family: Arial;
+   font-size: large;
+   margin-left: 15px;
+   font-weight: normal;
+   margin-bottom: 1px;
+   margin-top: 20px;
+}
+input[type=text], select {
+  width: 60%;
+  padding: 6px 12px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: Arial;
+  position: static;
+  font-size: small;
+}
+label{
+    float: left;
+    margin-right: 50px;
+}
+div {
+  padding-top: 10px;
+  background-color: white;
+  padding-left: 15px;
+}
+.findpages {
+    margin-left: 15px;
+    font-family: Arial;
+    font-size: medium;
+}
+input[type=submit], select{
+    display: block;
+    float: right;
+    margin-right: 22%;
+    margin-top: 15px;
+    background-color: #288CF2;
+    color: white;
+    border-radius: 4px;
+    width: 12%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px;
+    outline-color: #288CF2;
+    border-color: #288CF2;
+    box-shadow: #288CF2;
+}
+hr{
+    width: 100%;
+    height: 0ch;
+    color: grey;
+}
+#theseword{
+   margin-left: 18%;
+   position: static;
+}
+#anyofthese{
+    margin-left: 18%;
+}
+#noneofthese{
+    margin-left: 18%;
+}
+    </style>-->
+</head>
+<body>
+    <title>Google Advanced Search</title>
+    <h1>Advanced Search</h1>
+    <nav>
+        <a href="googlehomepage.html" class="navtext">Google Search</a>
+        <a href="googleimage.html" class="navtext">Google Images</a>
+        </nav>
+        <br><hr><br>
+    <p class="findpages">Find pages with...</p>
+    <div>
+        <form action="https://google.com/search">
+            <label for="theseword">all these words:</label>
+            <input class="adinput" type="text" id="theseword" name="as_q">
+
+            <label for="thisexact">this exact word or phrase:</label>
+            <input class="adinput" type="text" id="thisexact" name="as_epq">
+
+            <label for="anyofthese">any of these words:</label>
+            <input class="adinput" type="text" id="anyofthese" name="as_oq">
+
+            <label for="noneofthese">none of these words:</label>
+            <input class="adinput" type="text" id="noneofthese" name="as_eq">
+
+            <input type="submit" value="Advanced Search">
+        </form>
+    </div>
+</body>
+</html>
